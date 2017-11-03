@@ -43,7 +43,7 @@ class MeinheldWorker(Worker):
         #server.set_watchdog(self.watchdog)
 
         server.set_listen_socket(fds)
-        server.set_max_content_length(524288000)
+        server.set_max_content_length(1572864000)
         server.run(self.wsgi)
 
     def handle_quit(self, sig, frame):
